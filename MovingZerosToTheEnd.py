@@ -10,8 +10,9 @@ def move_zeros(array):
     cnt = 0
     res = []
     for i in array:
-        if i == 0:
+        if i == 0 and i is not False:
             cnt += 1
+        
         else:
             res.append(i)
     a = [0 for i in range(cnt)]
